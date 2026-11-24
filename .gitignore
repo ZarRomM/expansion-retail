@@ -1,0 +1,24 @@
+# Data: not tracked (reproduced by the pipeline)
+data/**
+!data/**/
+!data/**/.gitkeep
+*.parquet
+*.csv
+
+# MLflow: local experiment tracking
+mlruns/
+mlartifacts/
+mlflow.db
+
+# Large model files
+models/*
+!models/.gitkeep
+
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
